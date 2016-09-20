@@ -22,7 +22,7 @@
             <div class="section__title">
                 <a ui-sref="main">Catalog</a>
                 <a ui-sref="categories">Categories</a>
-                <input type="text" my-on-key-down-call="ctrl.searchQuery()" placeholder="search coursera" ng-model="ctrl.searchText">
+                <input type="text" ng-submit="ctrl.searchQuery()" placeholder="search coursera" ng-model="ctrl.searchText">
             </div>
         </div>
         <div ui-view></div>

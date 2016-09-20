@@ -271,6 +271,11 @@ body {
     cursor: pointer;
 }
 
+.categoryDiv h4:hover{
+    color : rgba(44,39,120,1);
+}
+
+
 .img-container {
     height: 90vh;
     width: 100%;
