@@ -1,0 +1,30 @@
+
+
+<div class="img-container" back-img="{{ctrl.data.elements[0].photoUrl}}"></div>
+
+
+<div class="site-content">
+    <h2>{{ctrl.data.elements[0].name}}</h2>
+    <p>{{ctrl.data.elements[0].description}}</p>
+</div>
+
+
+<div ng-if="ctrl.partners.length !== 0" class="site-content">
+    <h2>Partners</h2>
+    
+    <div class="partners">
+    	<img ng-src="{{ctrl.data.elements[0].partnerLogo}}" alt="">
+    
+    </div>
+    
+</div>
+
+<div ng-if="ctrl.instructors.length !== 0" class="site-content">
+    <h2>Instructors</h2>
+    <div class="instructor-grid">
+        <div ng-repeat="teacher in ctrl.instructors" ng-if="teacher.fullName !== ''" class="instructor" >
+        	<img ng-src="{{teacher.photo}}" >
+            <p>{{teacher.fullName}}</p>
+        </div>
+    </div>
+</div>

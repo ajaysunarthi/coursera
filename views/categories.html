@@ -1,0 +1,14 @@
+<div class="categoryDiv" ng-repeat="(catkey, catvalue) in ctrl.categories">
+    <h4 ui-sref="specificCategory({catvalue:catkey})">{{catkey}}</h4>
+
+    <div data-column='3' class="grid">
+        <div class="column" ng-repeat="course in catvalue.featured track by $index">
+            <div class="description"><a ui-sref="site({slug:course.slug})">{{course.description | limitTo: 190}}</a></div>
+            <div class="course">
+                <div class="course__image"><img lazy-img="{{course.photoUrl}}" /></div>
+                <div class="course__name">{{course.name}}</div>
+                <div class="course__partner">{{course.partnerName}}</div>
+            </div>
+        </div>
+    </div>
+</div>

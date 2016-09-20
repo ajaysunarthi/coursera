@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coursera Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet  'href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-lazy-img/release/angular-lazy-img.min.js"></script>
+</head>
+
+<body ng-app="courseraApp" ng-controller="mainCtrl as ctrl">
+    <div class="container">
+        <div class="section">
+            <div class="section__title">
+                <a ui-sref="main">Catalog</a>
+                <a ui-sref="categories">Categories</a>
+                <input type="text" my-on-key-down-call="ctrl.searchQuery()" placeholder="search coursera" ng-model="ctrl.searchText">
+            </div>
+        </div>
+        <div ui-view></div>
+    </div>
+    
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/maincontroller.js"></script>
+    <script src="scripts/controllers/searchcontroller.js"></script>
+    <script src="scripts/controllers/sitecontrol.js"></script>
+
+    <script src="scripts/services/service.js"></script>
+    <script src="scripts/directives/backgroundimage.js"></script>
+    <script src="scripts/directives/enterkeypress.js"></script>
+    
+    
+</body>
+
+</html>
