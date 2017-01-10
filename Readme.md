@@ -9,7 +9,9 @@
  - Cross origin requests were blocked on coursera api and no jsonp support was there so used nodejs as backend to make the server side requests.
   - Requests a data of size 100 and sort it into categories and serve catalog and categories route from the main controller.  
   - Search and site routes are taken care by the search and site controllers
-  - A lot could have been done but this is what I have come up with, feed back is appreciated.
+  
+  ![](screenshots/2.png?raw=true)
+  ![](screenshots/3.png?raw=true)
   
 
 	
